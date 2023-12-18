@@ -1,0 +1,13 @@
+plugins {
+    id 'java-library'
+    id 'info.solidsoft.pitest' version '1.15.0'
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13.2'
+}
+
+pitest {
+    targetClasses = ['com.example.*']
+    verbose = true
+}
